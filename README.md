@@ -4,6 +4,12 @@
 
 Generate JavaScript/TypeScript code from Zod schemas — round-trip safe 🌀
 
+[![npm](https://img.shields.io/npm/v/@lucaconlaq/zod-to-code)](https://www.npmjs.com/package/@lucaconlaq/zod-to-code)
+[![npm downloads](https://img.shields.io/npm/dm/@lucaconlaq/zod-to-code)](https://www.npmjs.com/package/@lucaconlaq/zod-to-code)
+[![biome](https://img.shields.io/badge/code_style-biome-56BEB8)](https://biomejs.dev)
+[![vitest](https://img.shields.io/badge/tested_with-vitest-6E9FEC)](https://vitest.dev)
+
+
 ---
 
 ## ✨ What does it do
