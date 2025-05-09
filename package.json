@@ -1,6 +1,6 @@
 {
 	"name": "@lucaconlaq/zod-to-code",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"type": "module",
 	"description": "Generate JavaScript/TypeScript code from Zod schemas.",
 	"repository": {
@@ -14,8 +14,17 @@
 		"format": "biome format --write src test",
 		"lint": "biome lint --write src test"
 	},
-	"files": ["dist"],
-	"keywords": ["zod", "codegen", "typescript", "serialization", "schema", "validation"],
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"zod",
+		"codegen",
+		"typescript",
+		"serialization",
+		"schema",
+		"validation"
+	],
 	"author": "lucaconlaq",
 	"license": "MIT",
 	"dependencies": {
