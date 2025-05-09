@@ -11,7 +11,7 @@ Generate JavaScript/TypeScript code from Zod schemas — round-trip safe 🌀
 
 ---
 
-## ✨ What does it do
+## ✨ What does it do?
 
 -  ✍️ The library does one thing and tries to do it well. It enables code generation from `zod` schemas.
 -  🧪 It is fully tested.
