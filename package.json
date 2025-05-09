@@ -1,6 +1,6 @@
 {
 	"name": "@lucaconlaq/zod-to-code",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"description": "Generate JavaScript/TypeScript code from Zod schemas.",
 	"repository": {
