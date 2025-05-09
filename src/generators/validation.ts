@@ -1,0 +1,15 @@
+export const validationCheckGenerators = {
+	min: (value: number) => `.min(${value})`,
+	max: (value: number) => `.max(${value})`,
+	email: () => ".email()",
+	trim: () => ".trim()",
+	toLowerCase: () => ".toLowerCase()",
+	toUpperCase: () => ".toUpperCase()",
+	regex: (regex: RegExp) => `.regex(${regex})`,
+	url: () => ".url()",
+	uuid: () => ".uuid()",
+	emoji: () => ".emoji()",
+	ip: () => ".ip()",
+	datetime: () => ".datetime()",
+	int: () => ".int()",
+} as const;
