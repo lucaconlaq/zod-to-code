@@ -16,7 +16,7 @@ export const complexTypeGenerators = {
 	[z.ZodFirstPartyTypeKind.ZodObject]: (field: z.ZodTypeAny, indent: number) =>
 		zodToCode(field as z.ZodObject<z.ZodRawShape>, indent),
 	[z.ZodFirstPartyTypeKind.ZodEnum]: (field: z.ZodTypeAny) =>
-		`z.enum([${field._def.values.map((v: string) => `"${v}"`).join(", ")}])`,
+		`z.enum([${field._def.values.map((v: string) => JSON.stringify(v)).join(", ")}])`,
 	[z.ZodFirstPartyTypeKind.ZodLiteral]: (field: z.ZodTypeAny) => `z.literal(${JSON.stringify(field._def.value)})`,
 	[z.ZodFirstPartyTypeKind.ZodUnion]: (field: z.ZodTypeAny, indent: number) => {
 		const options = field._def.options.map((opt: z.ZodTypeAny) => zodFieldToString(opt, indent));
