@@ -20,7 +20,7 @@ export const complexTypeGenerators = {
 	[z.ZodFirstPartyTypeKind.ZodLiteral]: (field: z.ZodTypeAny) => `z.literal(${JSON.stringify(field._def.value)})`,
 	[z.ZodFirstPartyTypeKind.ZodUnion]: (field: z.ZodTypeAny, indent: number) => {
 		const options = field._def.options.map((opt: z.ZodTypeAny) => zodFieldToString(opt, indent));
-		return `${options[0]}.or(${options.slice(1).join(", ")})`;
+		return `z.union([${options.join(", ")}])`;
 	},
 	[z.ZodFirstPartyTypeKind.ZodIntersection]: (field: z.ZodTypeAny, indent: number) => {
 		const leftType = zodFieldToString(field._def.left, indent);
